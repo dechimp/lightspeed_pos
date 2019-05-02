@@ -14,6 +14,7 @@ require_relative 'serializeds'
 require_relative 'shops'
 require_relative 'special_orders'
 require_relative 'vendors'
+require_relative 'customers'
 
 module Lightspeed
   class Account < Lightspeed::Resource
@@ -37,7 +38,8 @@ module Lightspeed
       :Serializeds,
       :Shops,
       :SpecialOrders,
-      :Vendors
+      :Vendors,
+      :Customers
     )
 
     def account
